@@ -1,0 +1,106 @@
+.main {
+    background-color: var(--black);
+    color: var(--gray);
+
+    .banner {
+        display: block;
+        text-align: center;        
+        border-top: 1px solid #656565;
+        width: 100%;
+        padding: 30px 30%;
+        font-size: 22px;
+        font-weight: bold;
+        background-color: var(--black-second);
+    
+        a {            
+            position: relative;
+            align-items: center;
+            color: var(--blue);            
+            
+            &:hover {
+                border-bottom: 1px solid var(--blue)
+            }
+        }        
+
+        svg {
+            position: absolute;
+            bottom: 45%;
+            transform: translateY(50%);
+            
+        }
+    }
+
+    .first {        
+        padding: 40px 10%;
+        padding-bottom: 0;
+
+        .option_colors {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+
+            h2 {
+                font-size: 75px;                
+            }
+
+            .colors {
+                display: flex;                
+                gap: 20px;
+
+                ul {
+                    display: flex;
+                    gap: 10px;
+                }
+
+                .ball {
+                    display: block;
+                    border: none;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: white;
+                    cursor: pointer;
+                
+                    &_purple {
+                        background: var(--purple)
+                    }
+                    &_gold {
+                        background: var(--gold);
+                    }
+                    &_silver {
+                        background: var(--silver);
+                    }
+                    &_space-black {
+                        background: var(--space-black);
+                    }
+                }
+            }
+        }
+
+        .phone {                               
+            width: 72%;
+            margin: 0 auto;
+            overflow: hidden;            
+            
+            .train {
+                width: 400%;                
+                display: flex;
+                justify-content: center;                
+                
+                img {                
+                    width: calc(100%/4);  
+                    object-fit: cover;
+                    transition: opacity 1s;                    
+                    opacity: 0;
+                
+                    &.active {
+                        opacity: 1;
+                    }
+                }                
+            }
+
+        }
+    }
+
+}

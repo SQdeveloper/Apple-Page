@@ -1,0 +1,60 @@
+.header {            
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.625rem;
+    padding: 0.3125rem 10%;
+    background-color: var(--black);
+
+    a {
+        color: var(--gray);
+    }
+
+    &_sup {                
+        width: 100%;                       
+
+        svg {
+            fill: var(--gray);
+            display: block;            
+        }
+
+        ul {
+            display: flex;            
+            align-items: center;            
+            justify-content: space-between;
+            gap: 1.25rem;                
+        }
+    }
+
+    &_inf {        
+        position: sticky;
+        top:0;
+        display: flex;
+        background-color: var(--black);
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 10%;
+        color: var(--gray);
+        font-size: 0.85rem;
+        z-index: 10;
+        
+        ul {
+            display: flex;
+            gap: 1.25rem;
+            
+            a.buy {
+                background-color: var(--blue);
+                border-radius: 20px;
+                padding: 3px 10px;
+            }
+
+            a {
+                word-spacing: 3px;
+                color: var(--gray);                
+            }
+        }
+    }
+}
