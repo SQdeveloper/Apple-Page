@@ -10,7 +10,7 @@ const showTransition = (index)=>{
     imgs.forEach(img=>{
         img.style.opacity = 0;
     })
-    setTimeout(()=>{imgs[index].style.opacity = 1}, 1000);
+    setTimeout(()=>{imgs[index].style.opacity = 1}, 500);
 }
 
 const blockCursor = (index)=>{
@@ -25,7 +25,7 @@ const blockCursor = (index)=>{
 balls.forEach((ball, index)=>{
     ball.addEventListener("click", ()=>{        
         showTransition(index);
-        setTimeout(()=>{moveTrain(index)}, 1000);
+        setTimeout(()=>{moveTrain(index)}, 500);
         blockCursor(index);
     })
 })
