@@ -490,4 +490,137 @@
             }
         }
     }
+
+    .designed {
+        padding: 5rem 10%;
+        text-align: start;
+        background-color: var(--gray-smooth);
+
+        h2 {
+            font-size: 3.4375rem;
+            
+            span {
+                display: block;
+            }
+        }
+
+        .cont_boxs {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 5rem;            
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 1rem;
+                background-color: var(--black);
+                padding: 2rem 1rem 0 1rem;
+                text-align: center;
+                flex: 1;
+
+                &:nth-child(1) .photo {
+                    padding: 1.8rem;
+                }
+
+                .icon {
+                    width: 35px;
+                    height: 42px;
+                }
+
+                h3 {
+                    font-size: 1.8rem;
+                    margin: .5rem 0 1rem 0;                    
+
+                    span {
+                        display: block;                        
+                    }
+                }
+
+                a {
+                    color: var(--blue);
+                    margin-bottom: 4rem;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        text-decoration-line: underline;
+                        
+                    }
+                }
+
+                .photo {
+                    height: 250px;
+                    object-fit: cover;                                        
+                }
+            }
+        }
+    }
+
+    .which {
+        background-color: var(--gray-smooth);
+        padding: 4rem 10%;
+
+        h2 {
+            font-size: 3.4357rem;
+
+            span {
+                 display: block;
+            }
+        }
+
+        .cont_box {
+            display: flex;
+            gap: 4rem;
+            margin-top: 4rem;            
+
+            .box {
+                display: flex;
+                flex-direction: column;                
+                text-align: center;
+                align-items: center;                
+
+                h3 {
+                    font-size: 1.9rem;
+                }
+
+                .iphone {
+                    height: 330px;
+                    object-fit: cover;
+                }
+
+                .circles {
+                    height: 20px;
+                    margin: .7rem 0;
+                }
+
+                span {
+                    font-size: 1.1rem;
+                    text-wrap: nowrap;                    
+
+                    &.sub {
+                        margin: .5rem 0 2.5rem 0;
+                    }
+                }
+
+                .buy {
+                    background-color: var(--blue);
+                    width: fit-content;
+                    border-radius: .9rem;
+                    padding: .2rem .7rem;
+                    margin: 1rem;
+                }
+
+                .learn {
+                    display: flex;
+                    align-items: center;
+                    color: var(--blue);
+
+                    svg {
+                        width: 13px;
+                        margin-left: 2px;
+                    }
+                }
+            }
+        }
+    }
 }
