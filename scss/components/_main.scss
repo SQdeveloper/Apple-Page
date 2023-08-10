@@ -140,6 +140,16 @@
             padding: .4rem 1rem;
         }
 
+        .arrow {//lo pongo aquí para que modifique todos los block de la section second
+            transform: translateX(-3.75rem);
+            transition: transform 1s;
+        }
+
+        .image_background {
+            transform: translateY(4rem);
+            transition: transform 1s;
+        }
+
         .first_square {                   
             display: flex;
             gap: 1.5rem;     
@@ -152,7 +162,7 @@
                 overflow: hidden;
                 background-color: var(--black);
                 position: relative;
-
+                
                 .arrow {
                     position: absolute;
                     right: 1.25rem;
@@ -162,7 +172,7 @@
                     width: 2.1875rem;
                     height: 2.1875rem;
                     padding: 0.5625rem 0.6875rem 0.5625rem 0.5625rem;
-                    object-fit: cover;
+                    object-fit: cover;                    
                 }
 
                 .title {
@@ -177,9 +187,15 @@
                 }
             }
 
-            .block:nth-child(1) {                
+            > .block:nth-child(1) {                
                 height: 100%;
-                width: 60%;                
+                width: 60%;
+                
+                .image_background {
+                    width: 100%;
+                    height: 80%;
+                    padding: 0 2rem;
+                }
             }
 
             .cont-two-blocks {
@@ -187,19 +203,15 @@
                 flex-direction: column;
                 gap: 1.5rem;
                 width: 40%;
-                height: 100%;
+                height: 100%;            
 
-                .block { //block general(css que modifica todos los div blocks)                    
+                .image_background {
+                    object-fit: cover;
                     width: 100%;
-                    height: 50%;                    
+                    height: 100%;
                 }
 
-                .block:nth-child(1) {
-                    .image_background {
-                        object-fit: cover;
-                        width: 100%;
-                        height: 100%;
-                    }
+                .block:nth-child(1) {                    
 
                     span {
                         position: absolute;
@@ -219,12 +231,7 @@
                         margin: 0;
                         margin-bottom: 1.5rem;
                         text-align: start;
-                    }
-                    .image_background {
-                        object-fit: cover;
-                        width: 100%;
-                        height: 100%;                        
-                    }
+                    }                    
                 }
             }            
         }
