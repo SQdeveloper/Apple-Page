@@ -1,6 +1,7 @@
 .main {
     background-color: var(--black);
     color: var(--gray);
+    overflow: hidden;
 
     .banner {
         display: block;
@@ -629,5 +630,114 @@
                 }
             }
         }
+    }
+}
+
+//Responsive
+@media only screen and (max-width: 1024px) {
+    .main .banner {
+        padding: 1.5rem 10%;
+        font-size: 1.2rem;
+    }    
+    
+
+    //FIRST SECTION
+    .main .first .option_colors h2 {
+        font-size: 3.3875rem;
+    }
+
+    .main .first .option_colors .colors {
+        font-size: .9rem;
+    }
+
+    .main .first {
+        padding: 2.5rem 1.5rem;
+        padding-bottom: 0;
+    }
+
+    //SECOND SECTION
+    .main section.second {
+        padding: 3rem 13%;
+    }
+
+    .main section.second .title {
+        font-size: 2rem;
+    }
+
+    .main section.second .buy {
+        font-size: 1rem;
+    }
+
+    .main section.second .first_square {
+        margin-top: 3.5rem;
+        height: 28rem;
+    }
+
+    .main section.second .first_square .block {
+        height: 50%;
+    }
+
+    .main section.second .first_square .cont-two-blocks .block:nth-child(1) span {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .main section.second .first_square .block .arrow {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .main section.second .first_square .block .title {
+        font-size: 1.8rem;
+    }
+
+    .main section.second .first_square .cont-two-blocks .block:nth-child(2) {
+        padding: 1rem 0 0 1rem;
+    } 
+
+    .main section.second .second_square {
+        height: 38rem;
+    }
+
+    .main section.second .second_square .block:nth-child(1) .text span {
+        font-size: 3rem;
+    }
+
+    .main section.second .second_square .block:nth-child(1) .text span:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .main section.second .second_square .block:nth-child(2) .text span {
+        font-size: 1.5rem;
+    }
+
+    .main section.second .second_square .block:nth-child(2) .text span:nth-child(1) {
+        font-size: 1.2rem;
+    }
+
+    .main section.second .second_square .block button img.arrow {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .main section.second .second_square .block:nth-child(4) span {
+        font-size: 1.8rem;
+    }
+
+    .main section.second .second_square .block:nth-child(4) {
+        padding: 0 2rem;
+    }
+
+    .main section.second .second_square .block:nth-child(4) .text {
+        margin: 1rem 0;
+    }
+
+    .main section.second .second_square .block:nth-child(3) span:nth-child(1) {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .main section.second .second_square .block:nth-child(3) span {
+        font-size: 1.4rem,
     }
 }

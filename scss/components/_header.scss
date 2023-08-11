@@ -6,7 +6,7 @@
     width: 100%;
     gap: 0.625rem;
     padding: 0.3125rem 10%;
-    background-color: var(--black);
+    background-color: var(--black);    
 
     a {
         color: var(--gray);
@@ -56,5 +56,18 @@
                 color: var(--gray);                
             }
         }
+    }
+}
+
+//Responsive
+@media only screen and (max-width: 1024px) {
+    .header_inf {
+        padding: 0.625rem 1.5rem;     
+        font-size: .8rem;
+    }
+    
+    .header {
+        padding: 0.3125rem 1.5rem;
+        font-size: .8rem;
     }
 }
