@@ -8,7 +8,7 @@ footer {
         justify-content: space-between;
         width: 100%;        
         padding: .5rem 0;
-        border-top: 1px solid var(--gray-black);
+        border-top: 1px solid var(--gray-black);        
     }
 
     span {
@@ -22,5 +22,17 @@ footer {
         a {
             color: #d6d5d5;
         }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    footer div {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 0 5%;
     }
 }

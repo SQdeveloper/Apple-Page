@@ -8,6 +8,27 @@
     padding: 0.3125rem 10%;
     background-color: var(--black);    
 
+    .options {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.3rem;
+
+        .barras_menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: .3rem;
+
+            .barra {
+                display: block;
+                height: 0.125rem;
+                width: 0.8125rem;
+                background-color: white;
+            }
+        }        
+    }
+
     a {
         color: var(--gray);
     }
@@ -69,5 +90,15 @@
     .header {
         padding: 0.3125rem 1.5rem;
         font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header_sup nav ul {
+        display: none;
+    }   
+
+    .header_sup .options {
+        display: flex;
     }
 }

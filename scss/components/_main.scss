@@ -479,8 +479,7 @@
             justify-content: center;
             gap: 5rem;
             width: 80%;
-            margin: 5rem auto;
-            height: 100vh;        
+            margin: 5rem auto;            
             color: var(--gray-black);            
 
             img {
@@ -516,6 +515,7 @@
             display: flex;
             gap: 1.5rem;
             margin-top: 5rem;            
+            flex-wrap: wrap;
 
             .box {
                 display: flex;
@@ -579,7 +579,9 @@
         .cont_box {
             display: flex;
             gap: 4rem;
-            margin-top: 4rem;            
+            margin-top: 4rem;
+            flex-wrap: wrap; 
+            justify-content: space-between;
 
             .box {
                 display: flex;
@@ -740,4 +742,107 @@
     .main section.second .second_square .block:nth-child(3) span {
         font-size: 1.4rem,
     }
+
+    //FIRST BANNER
+    .main .first_banner h2 {
+        font-size: 2.5rem;
+    }
+
+    //CAMERA BANNER
+    .main .camera_banner .text {
+        font-size: 2.5rem;
+    }
+
+    //SECTION DESIGNED
+    .main .designed h2 {
+        font-size: 3rem;
+    }
+
+    .main .designed .cont_boxs .box {
+        flex: none;
+        width: 100%;
+    }
+
+    .main .designed .cont_boxs .box h3 {
+        display: flex;
+        gap: .2rem;
+    }
+
+    .main .designed .cont_boxs .box .photo {
+        height: 200px;
+    }
+
+    .main .designed .cont_boxs .box a {
+        margin-bottom: 1.2rem;
+    }
+
+    .main .designed .cont_boxs .box:nth-child(1) .photo {
+        padding-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main .first {
+        padding: 2rem 5% 0;
+    }
+
+    .main section.second {
+        padding: 3rem 5%;
+    }
+
+    .main .first_banner {
+        padding: 3rem 5%;
+    }
+
+    .main .camera_banner .text {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1.5rem;
+    }
+
+    //SECTION PROPERTIES
+    .main .properties .group_1 img, .main .properties .group_3 img {        
+        width: 20rem;
+        height: 25.5rem;
+    }    
+
+    .main .properties .group_1, .main .properties .group_2, .main .properties .group_3 {
+        gap: 2rem;
+        width: 90%;
+        margin: 4rem auto;
+    }
+
+    .main .properties .group_2 .images img:nth-child(1) {
+        width: calc(60% - 1.5rem);
+    }
+
+    //SECTION DESIGNED {
+    .main .designed {
+        padding: 3rem 5%;
+    }
+
+    .main .designed .cont_boxs {
+        margin-top: 3rem;
+    }
+
+    //SECTION WHICH
+    .main .which {
+        padding: 2rem 13%;
+    }
+    
+    .main .which h2 {
+        font-size: 3rem;
+    }
+
+    .main .which .cont_box .box .iphone {
+        height: 18.125rem;
+    }
+
+    .main .which .cont_box {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
 }
