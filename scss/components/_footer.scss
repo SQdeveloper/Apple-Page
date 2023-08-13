@@ -9,10 +9,16 @@ footer {
         width: 100%;        
         padding: .5rem 0;
         border-top: 1px solid var(--gray-black);        
+        gap: .5rem;        
     }
 
     span {
-        color: var(--gray-black)
+        color: var(--gray-black);
+        text-wrap: nowrap;
+    }
+
+    a {
+        text-wrap: nowrap;
     }
 
     ul {
@@ -34,5 +40,14 @@ footer {
 @media only screen and (max-width: 768px) {
     footer {
         padding: 0 5%;
+    }
+
+    footer div {
+        text-align: center;
+    }
+    footer ul {
+        flex-wrap:wrap;
+        gap: .5rem;
+        justify-content: center;
     }
 }
