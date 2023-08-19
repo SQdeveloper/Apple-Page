@@ -22,3 +22,4 @@ background.addEventListener("click", ()=>{
 menu.addEventListener("scroll", ()=>{
     console.log("scroll")
 });
+
