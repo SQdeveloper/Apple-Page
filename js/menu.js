@@ -7,9 +7,9 @@ button_arrow.addEventListener("click", ()=> {
     menu.classList.toggle("active");
     background.classList.toggle("active");
     if(isActive) {
-        button_arrow.querySelector("img").src = "../assets/icons/chevron-up.svg";
+        button_arrow.querySelector("img").src = "./assets/icons/chevron-up.svg";
     } else {
-        button_arrow.querySelector("img").src = "../assets/icons/chevron-down.svg";
+        button_arrow.querySelector("img").src = "./assets/icons/chevron-down.svg";
     }
     isActive = !isActive;
 });

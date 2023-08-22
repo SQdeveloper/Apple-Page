@@ -33,7 +33,7 @@ balls.forEach((ball, index)=>{
 //Responsive (480px) cellphone
 if(window.innerWidth <= 480) {
     for(let i=0; i<4; i++) {
-        imgs[i].src = `../assets/images/hero_iphone_tlx${i+1}.jpg`;        
+        imgs[i].src = `./assets/images/hero_iphone_tlx${i+1}.jpg`;        
     }
 }
 
@@ -41,6 +41,6 @@ window.addEventListener("resize", ()=>{
     if(window.innerWidth > 480) return;
     
     for(let i=0; i<4; i++) {
-            imgs[i].src = `../assets/images/hero_iphone_tlx${i+1}.jpg`;
+            imgs[i].src = `./assets/images/hero_iphone_tlx${i+1}.jpg`;
     }
 })
