@@ -19,6 +19,6 @@ video.addEventListener("ended", ()=>{
 //Responsive (480px) cellphone
 if(window.innerWidth <= 480) {
     isViewPhone = true;
-    video.src = "../assets/video/small_2x.mp4";
+    video.src = "./assets/video/small_2x.mp4";
     firstPhone.style.transition = "opacity 0";
 }
